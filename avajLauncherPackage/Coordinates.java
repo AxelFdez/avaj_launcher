@@ -9,7 +9,7 @@ public class Coordinates {
 		if (longitude <= 0 || latitude <= 0)
 			throw new IllegalArgumentException("Coordinates must be positive");
 		else if (height > 100)
-			height = 100;
+			throw new IllegalArgumentException("Height must be less than 100");
 		this.longitude = longitude;
 		this.latitude = latitude;
 		this.height = height;

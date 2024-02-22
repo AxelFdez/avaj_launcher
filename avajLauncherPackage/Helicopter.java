@@ -18,7 +18,7 @@ public class Helicopter extends Aircraft{
 			case "SUN" :
 				if (currentWeather != lastWeather)
 					Simulation.printSimulationsInFile("Helicopter#" + name + "(" + id + "): This is hot.");
-				coordinates = new Coordinates(coordinates.getLongitude() + 10, coordinates.getLatitude(), coordinates.getHeight() + 2);
+				coordinates = new Coordinates(coordinates.getLongitude() + 10, coordinates.getLatitude(), (coordinates.getHeight() + 2) > 100 ? 100 : coordinates.getHeight() + 2);
 				break;
 			case "RAIN" :
 				if (currentWeather != lastWeather)

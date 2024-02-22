@@ -18,7 +18,7 @@ public class JetPlane extends Aircraft{
 			case "SUN" :
 				if (currentWeather != lastWeather)
 					Simulation.printSimulationsInFile("Jetplane#" + name + "(" + id + "): I take my sunglasses.");
-				coordinates = new Coordinates(coordinates.getLongitude(), coordinates.getLatitude() + 10, coordinates.getHeight() + 2);
+				coordinates = new Coordinates(coordinates.getLongitude(), coordinates.getLatitude() + 10, (coordinates.getHeight() + 2) > 100 ? 100 : coordinates.getHeight() + 2);
 				break;
 			case "RAIN" :
 				if (currentWeather != lastWeather)

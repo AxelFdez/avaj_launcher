@@ -44,7 +44,13 @@ public class Simulation {
 				newAircraft.registerTower(newWeatherTower);
 			}
 			catch (NumberFormatException e) {
-				System.out.println("Invalid Coordinates" );
+				System.out.println("Invalid Coordinates : " + e.getMessage());
+				isSimulationFileExists();
+				System.exit(1);
+			}
+			catch (IllegalArgumentException e) {
+				System.out.println("Invalid Flyable type : " + e.getMessage());
+				isSimulationFileExists();
 				System.exit(1);
 			}
 			i++;
