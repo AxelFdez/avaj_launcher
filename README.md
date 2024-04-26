@@ -26,13 +26,13 @@ To run the simulation program, follow these steps:
 
 3. Compile the project by running the following commands:
 ```shell
-	find * -name "*.java" > sources.txt
-	javac @sources.txt
+   find * -name "*.java" > sources.txt
+   javac @sources.txt
 ```
 
 4. Run the program by providing a scenario file as an argument:
 ```shell
-	java avajLauncher ressources/scenario.txt
+   java avajLauncher ressources/scenario.txt
 ```
 
 
@@ -44,11 +44,11 @@ The number of times the simulation should be run.
 Descriptions of aircraft participating in the simulation, including type, name, longitude, latitude, and height.
 Example scenario file format:
 ```shell
-	12
-	Baloon B1 2 3 20
-	Baloon B2 1 8 66
-	JetPlane J1 23 44 32
-	Helicopter H1 654 33 20
+   12
+   Baloon B1 2 3 20
+   Baloon B2 1 8 66
+   JetPlane J1 23 44 32
+   Helicopter H1 654 33 20
 ```
 
 
@@ -58,8 +58,8 @@ After running the simulation, a file named simulation.txt will be generated. Thi
 
 Example simulation output:
 ```shell
-	Tower says: Baloon#B1(1) registered to weather tower.
-	...
+   Tower says: Baloon#B1(1) registered to weather tower.
+   ...
 ```
 
 
