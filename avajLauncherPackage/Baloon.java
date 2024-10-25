@@ -18,7 +18,7 @@ public class Baloon extends Aircraft{
 			case "SUN" :
 				if (currentWeather != lastWeather)
 					Simulation.printSimulationsInFile("Baloon#" + name + "(" + id + "): What a sunny day.");
-				coordinates = new Coordinates((coordinates.getLongitude() + 2) > 190 ? -190 : (coordinates.getLongitude() + 2), coordinates.getLatitude(), (coordinates.getHeight() + 4) > 100 ? 100 : coordinates.getHeight() + 4);
+				coordinates = new Coordinates((coordinates.getLongitude() + 2) > 180 ? -180 : (coordinates.getLongitude() + 2), coordinates.getLatitude(), (coordinates.getHeight() + 4) > 100 ? 100 : coordinates.getHeight() + 4);
 				break;
 			case "RAIN" :
 				if (currentWeather != lastWeather)

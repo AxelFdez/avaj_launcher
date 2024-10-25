@@ -18,17 +18,17 @@ public class Helicopter extends Aircraft{
 			case "SUN" :
 				if (currentWeather != lastWeather)
 					Simulation.printSimulationsInFile("Helicopter#" + name + "(" + id + "): This is hot.");
-				coordinates = new Coordinates(coordinates.getLongitude() + 10, coordinates.getLatitude(), (coordinates.getHeight() + 2) > 100 ? 100 : coordinates.getHeight() + 2);
+				coordinates = new Coordinates((coordinates.getLongitude() + 10) > 180 ? -180 : coordinates.getLongitude() + 10, coordinates.getLatitude(), (coordinates.getHeight() + 2) > 100 ? 100 : coordinates.getHeight() + 2);
 				break;
 			case "RAIN" :
 				if (currentWeather != lastWeather)
 					Simulation.printSimulationsInFile("Helicopter#" + name + "(" + id + "): It's raining. Better watch out for lightings.");
-				coordinates = new Coordinates(coordinates.getLongitude() + 5, coordinates.getLatitude(), coordinates.getHeight());
+				coordinates = new Coordinates((coordinates.getLongitude() + 5) > 180 ? -180 : coordinates.getLongitude() + 5, coordinates.getLatitude(), coordinates.getHeight());
 				break;
 			case "FOG" :
 				if (currentWeather != lastWeather)
 					Simulation.printSimulationsInFile("Helicopter#" + name + "(" + id + "): I can't see anything.");
-				coordinates = new Coordinates(coordinates.getLongitude() + 1, coordinates.getLatitude(), coordinates.getHeight());
+				coordinates = new Coordinates((coordinates.getLongitude() + 1) > 180 ? -180 : coordinates.getLongitude() + 1, coordinates.getLatitude(), coordinates.getHeight());
 				break;
 			case "SNOW" :
 				if (currentWeather != lastWeather)

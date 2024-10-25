@@ -20,7 +20,7 @@ public class ValidateScenario{
 
 	private ValidateScenario(String scenario) {
 
-		if (scenario.length() == 0) {
+		if (scenario.isEmpty()) {
 			throw new ParsingFileException("Scenario file is empty");
 		}
 		try {
@@ -35,7 +35,7 @@ public class ValidateScenario{
 
 	private File file;
 
-	private static File estFile(String scenario) throws IOException {
+	private static File testFile(String scenario) throws IOException {
         File file = new File(scenario);
         if (!file.exists()) {
             throw new FileNotFoundException("File not found");
@@ -66,14 +66,14 @@ public class ValidateScenario{
         } catch (IOException e) {
             e.printStackTrace();
         }
-		numSimulations = Integer.parseInt(lines.get(0));
+		numSimulations = Integer.parseInt(lines.getFirst());
 		if (numSimulations <= 0) {
 			throw new ParsingFileException("Number of simulations must be a positive integer");
 		}
 		else if (numSimulations > Integer.MAX_VALUE) {
 			throw new ParsingFileException("Number of simulations must be less than " + Integer.MAX_VALUE);
 		}
-		lines.remove(0);
+		lines.removeFirst();
 		for (String line : lines) {
 			StringTokenizer st = new StringTokenizer(line, " ");
 			if (st.countTokens() != 5) {

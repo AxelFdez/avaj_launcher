@@ -52,7 +52,6 @@ public class Simulation {
 		}
 		i = 0;
 		while (i < numSimulations) {
-			System.err.println("Simulation: " + i);
 			newWeatherTower.changeWeather();
 			i++;
 		}
