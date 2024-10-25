@@ -21,7 +21,7 @@ public class ValidateScenario{
 	private ValidateScenario(String scenario) {
 
 		if (scenario.length() == 0) {
-			throw new IllegalArgumentException("Scenario file is empty");
+			throw new ParsingFileException("Scenario file is empty");
 		}
 		try {
 			file = testFile(scenario);
@@ -35,7 +35,7 @@ public class ValidateScenario{
 
 	private File file;
 
-	private static File testFile(String scenario) throws IOException {
+	private static File estFile(String scenario) throws IOException {
         File file = new File(scenario);
         if (!file.exists()) {
             throw new FileNotFoundException("File not found");
@@ -68,16 +68,16 @@ public class ValidateScenario{
         }
 		numSimulations = Integer.parseInt(lines.get(0));
 		if (numSimulations <= 0) {
-			throw new IllegalArgumentException("Number of simulations must be a positive integer");
+			throw new ParsingFileException("Number of simulations must be a positive integer");
 		}
 		else if (numSimulations > Integer.MAX_VALUE) {
-			throw new IllegalArgumentException("Number of simulations must be less than " + Integer.MAX_VALUE);
+			throw new ParsingFileException("Number of simulations must be less than " + Integer.MAX_VALUE);
 		}
 		lines.remove(0);
 		for (String line : lines) {
 			StringTokenizer st = new StringTokenizer(line, " ");
 			if (st.countTokens() != 5) {
-				throw new IllegalArgumentException("Invalid number of arguments in line: " + line + " need 5 parameters");
+				throw new ParsingFileException("Invalid number of arguments in line: " + line + " need 5 parameters");
 			}
 			if (flyablesData == null)
 				flyablesData = new ArrayList<StringTokenizer>();

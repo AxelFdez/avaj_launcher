@@ -20,11 +20,10 @@ public class AircraftFactory {
 			return new Baloon(++counter, p_name, p_coordinates);
 		} else if (p_type.equals("JetPlane")) {
 			return new JetPlane(++counter, p_name, p_coordinates);
-		}
-		else if (p_type.equals("Helicopter")) {
+		} else if (p_type.equals("Helicopter")) {
 			return new Helicopter(++counter, p_name, p_coordinates);
 		} else {
-			throw new IllegalArgumentException("Invalid Aircraft Type");
+			throw new AircraftException("Unknow Type, required : [Ballon, JetPlane, Helicopter]");
 		}
 	}
 }

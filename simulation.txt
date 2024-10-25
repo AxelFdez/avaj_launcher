@@ -1,0 +1,79 @@
+Tower says: Baloon#B1(1) registered to weather tower.
+Tower says: Baloon#B2(2) registered to weather tower.
+Tower says: Jetplane#J1(3) registered to weather tower.
+Tower says: Helicopter#H1(4) registered to weather tower.
+Tower says: Helicopter#H2(5) registered to weather tower.
+Tower says: Helicopter#H3(6) registered to weather tower.
+Tower says: Baloon#B3(7) registered to weather tower.
+Tower says: Jetplane#J2(8) registered to weather tower.
+Tower says: Helicopter#H4(9) registered to weather tower.
+Baloon#B1(1): Where am I?
+Baloon#B2(2): Watch out for the rain.
+Jetplane#J1(3): I take my sunglasses.
+Helicopter#H1(4): It's raining. Better watch out for lightings.
+Helicopter#H2(5): My rotor is going to freeze!
+Helicopter#H3(6): This is hot.
+Baloon#B3(7): Where am I?
+Jetplane#J2(8): Fortunately, I have a heater.
+Helicopter#H4(9): I can't see anything.
+Baloon#B1(1): What a sunny day.
+Jetplane#J1(3): I drive only with my radar.
+Helicopter#H1(4): This is hot.
+Helicopter#H2(5): It's raining. Better watch out for lightings.
+Helicopter#H3(6): I can't see anything.
+Baloon#B3(7): What a sunny day.
+Helicopter#H4(9): It's raining. Better watch out for lightings.
+Jetplane#J1(3): So much flashes in the sky.
+Helicopter#H1(4): It's raining. Better watch out for lightings.
+Helicopter#H2(5): This is hot.
+Helicopter#H3(6): It's raining. Better watch out for lightings.
+Baloon#B3(7): It's snowing. We're going down!
+Jetplane#J2(8): I take my sunglasses.
+Helicopter#H2(5): My rotor is going to freeze!
+Helicopter#H3(6): This is hot.
+Baloon#B3(7): Where am I?
+Jetplane#J2(8): I drive only with my radar.
+Helicopter#H4(9): My rotor is going to freeze!
+Baloon#B1(1): Where am I?
+Helicopter#H1(4): I can't see anything.
+Helicopter#H2(5): It's raining. Better watch out for lightings.
+Helicopter#H3(6): It's raining. Better watch out for lightings.
+Jetplane#J2(8): So much flashes in the sky.
+Helicopter#H4(9): I can't see anything.
+Baloon#B1(1): It's snowing. We're going down!
+Helicopter#H1(4): It's raining. Better watch out for lightings.
+Helicopter#H3(6): I can't see anything.
+Baloon#B3(7): What a sunny day.
+Helicopter#H4(9): It's raining. Better watch out for lightings.
+Baloon#B1(1): What a sunny day.
+Baloon#B2(2): It's snowing. We're going down!
+Baloon#B3(7): It's snowing. We're going down!
+Baloon#B2(2): Watch out for the rain.
+Helicopter#H2(5): My rotor is going to freeze!
+Helicopter#H3(6): It's raining. Better watch out for lightings.
+Baloon#B3(7): What a sunny day.
+Helicopter#H4(9): My rotor is going to freeze!
+Baloon#B2(2): What a sunny day.
+Jetplane#J1(3): Fortunately, I have a heater.
+Helicopter#H2(5): I can't see anything.
+Helicopter#H3(6): I can't see anything.
+Baloon#B3(7): It's snowing. We're going down!
+Baloon#B3(7): landing.
+Tower says: Baloon#B3(7) unregistered from weather tower.
+Baloon#B1(1): Where am I?
+Jetplane#J1(3): I take my sunglasses.
+Helicopter#H3(6): It's raining. Better watch out for lightings.
+Helicopter#H4(9): This is hot.
+Baloon#B1(1): It's snowing. We're going down!
+Jetplane#J1(3): So much flashes in the sky.
+Helicopter#H3(6): I can't see anything.
+Jetplane#J2(8): Fortunately, I have a heater.
+Helicopter#H4(9): It's raining. Better watch out for lightings.
+Baloon#B1(1): Where am I?
+Baloon#B2(2): Where am I?
+Jetplane#J1(3): Fortunately, I have a heater.
+Helicopter#H1(4): My rotor is going to freeze!
+Helicopter#H2(5): It's raining. Better watch out for lightings.
+Helicopter#H3(6): It's raining. Better watch out for lightings.
+Jetplane#J2(8): I take my sunglasses.
+Helicopter#H4(9): My rotor is going to freeze!

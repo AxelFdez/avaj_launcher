@@ -34,8 +34,8 @@ public class Simulation {
 		isSimulationFileExists();
 		WeatherTower newWeatherTower = new WeatherTower();
 		int i = 0;
+		AircraftFactory instance = AircraftFactory.getInstance();
 		while (i < flyablesData.size()) {
-			AircraftFactory instance = AircraftFactory.getInstance();
 			try {
 				Flyable newAircraft = instance.newAircraft(flyablesData.get(i).nextToken(), flyablesData.get(i).nextToken(),
 								new Coordinates(Integer.parseInt(flyablesData.get(i).nextToken()),
@@ -43,13 +43,8 @@ public class Simulation {
 												Integer.parseInt(flyablesData.get(i).nextToken())));
 				newAircraft.registerTower(newWeatherTower);
 			}
-			catch (NumberFormatException e) {
-				System.out.println("Invalid Coordinates : " + e.getMessage());
-				isSimulationFileExists();
-				System.exit(1);
-			}
-			catch (IllegalArgumentException e) {
-				System.out.println("Invalid Flyable type : " + e.getMessage());
+			catch (AircraftException e) {
+				System.out.println("Invalid Aircraft : " + e.getMessage());
 				isSimulationFileExists();
 				System.exit(1);
 			}
@@ -57,6 +52,7 @@ public class Simulation {
 		}
 		i = 0;
 		while (i < numSimulations) {
+			System.err.println("Simulation: " + i);
 			newWeatherTower.changeWeather();
 			i++;
 		}
